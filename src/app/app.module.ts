@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,16 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { CivilizationsComponent } from './layouts/civilizations/civilizations.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    CivilizationsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HomeComponent, CivilizationsComponent],
+  imports: [HttpClientModule, BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
