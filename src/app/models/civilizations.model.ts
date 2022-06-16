@@ -1,11 +1,14 @@
-export class Civilizations {
-  constructor(
-    public id: number,
-    public expansion: string,
-    public army_type: string,
-    public unique_unit: string[],
-    public unique_tech: string[],
-    public team_bonus: string,
-    public civilization_bonus: string[]
-  ) {}
+export interface Civilization {
+  id: number;
+  name: string;
+  expansion: string;
+  army_type: string;
+  unique_unit: string[];
+  unique_tech: string[];
+  team_bonus: string;
+  civilization_bonus: string[];
+}
+
+export interface GetAllCivilizations {
+  civilizations: Civilization[];
 }

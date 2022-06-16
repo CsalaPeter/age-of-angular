@@ -1,4 +1,4 @@
-.civHeader {
+.structHeader {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 5rem;
@@ -14,6 +14,11 @@ td {
   text-align: left;
   width: 200px;
   background-color: burlywood;
+}
+
+.headers {
+  width: 300px;
+  background-color: bisque;
 }
 
 .tableContainer {

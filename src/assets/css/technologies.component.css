@@ -1,4 +1,4 @@
-.civHeader {
+.techHeader {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 5rem;
@@ -6,7 +6,7 @@
 
 .dataTable {
   table-layout: fixed;
-  width: 200px;
+  width: 50%;
 }
 
 th,

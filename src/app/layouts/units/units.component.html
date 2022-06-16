@@ -1,0 +1,34 @@
+<h1 class="unitHeader">Units</h1>
+<div class="tableContainer">
+  <table class="dataTable">
+    <tr>
+      <th class="headers" *ngFor="let header of headers">
+        {{ header }}
+      </th>
+    </tr>
+
+    <tr *ngFor="let unit of units">
+      <td class="civName">
+        {{ unit.name }}
+      </td>
+      <td>
+        {{ unit.age }}
+      </td>
+      <td>
+        {{ unit.cost.Wood }}
+      </td>
+      <td>
+        {{ unit.cost.Food }}
+      </td>
+      <td>
+        {{ unit.cost.Stone }}
+      </td>
+      <td>
+        {{ unit.cost.Gold }}
+      </td>
+      <td>
+        {{ unit.description }}
+      </td>
+    </tr>
+  </table>
+</div>

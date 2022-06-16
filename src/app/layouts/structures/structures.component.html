@@ -1,4 +1,4 @@
-<h1 class="civHeader">Civilizations</h1>
+<h1 class="structHeader">Structures</h1>
 <div class="tableContainer">
   <table class="dataTable">
     <tr>
@@ -7,18 +7,21 @@
       </th>
     </tr>
 
-    <tr *ngFor="let civ of civilizations">
-      <td class="civName">
-        {{ civ.name }}
+    <tr *ngFor="let struct of structures">
+      <td>
+        {{ struct.name }}
       </td>
       <td>
-        {{ civ.expansion }}
+        {{ struct.age }}
       </td>
       <td>
-        {{ civ.army_type }}
+        {{ struct.cost.Wood }}
       </td>
       <td>
-        {{ civ.team_bonus }}
+        {{ struct.cost.Stone }}
+      </td>
+      <td>
+        {{ struct.cost.Gold }}
       </td>
     </tr>
   </table>
