@@ -1,4 +1,4 @@
-export interface Technologie {
+export interface Technology {
   id: number;
   name: string;
   description: string;
@@ -16,5 +16,5 @@ export interface Technologie {
 }
 
 export interface GetAllTechnologies {
-  technologies: Technologie[];
+  technologies: Technology[];
 }

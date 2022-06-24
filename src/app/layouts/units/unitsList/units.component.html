@@ -29,6 +29,11 @@
       <td>
         {{ unit.description }}
       </td>
+      <td>
+        <button [routerLink]="['/unit', unit.id]" routerLinkActive="active">
+          >>>
+        </button>
+      </td>
     </tr>
   </table>
 </div>

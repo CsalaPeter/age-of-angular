@@ -1,0 +1,12 @@
+<h1 class="civHeader">
+  {{ civilization.name }}
+</h1>
+
+<div>
+  <div>{{ civilization.expansion }}</div>
+  <div>{{ civilization.army_type }}</div>
+  <div>{{ civilization.team_bonus }}</div>
+  <div>{{ civilization.civilization_bonus }}</div>
+  <div *ngFor="let unit of uniqueUnites">{{ unit }}</div>
+  <div *ngFor="let tech of uniqueTechs">{{ tech }}</div>
+</div>

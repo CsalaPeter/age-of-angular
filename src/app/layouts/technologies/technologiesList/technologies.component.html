@@ -29,6 +29,14 @@
       <td>
         {{ tech.description }}
       </td>
+      <td>
+        <button
+          [routerLink]="['/technology', tech.id]"
+          routerLinkActive="active"
+        >
+          >>>
+        </button>
+      </td>
     </tr>
   </table>
 </div>

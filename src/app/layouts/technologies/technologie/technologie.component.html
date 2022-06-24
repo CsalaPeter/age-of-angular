@@ -1,0 +1,16 @@
+<h1 class="techHeader">
+  {{ technology.name }}
+</h1>
+
+<div>
+  <div>{{ technology.description }}</div>
+  <div>{{ technology.expansion }}</div>
+  <div>{{ technology.age }}</div>
+  <div>{{ building }}</div>
+  <div>{{ technology.cost.Wood }}</div>
+  <div>{{ technology.cost.Food }}</div>
+  <div>{{ technology.cost.Stone }}</div>
+  <div>{{ technology.cost.Gold }}</div>
+  <div>{{ technology.build_time }}</div>
+  <div *ngFor="let unit of units">{{ unit }}</div>
+</div>

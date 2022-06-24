@@ -1,6 +1,7 @@
 export interface Structure {
   id: number;
   name: string;
+  description: string;
   expansion: string;
   age: string;
   cost: {

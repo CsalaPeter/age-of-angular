@@ -6,12 +6,12 @@ import { LayoutService } from 'src/app/services/layout.service';
 @Component({
   selector: 'app-structures',
   templateUrl: './structures.component.html',
-  styleUrls: ['../../../assets/css/structures.component.css'],
+  styleUrls: ['../../../../assets/css/structures.component.css'],
 })
 export class StructuresComponent implements OnInit {
   layoutSub?: Subscription;
   structures: Structure[] = [];
-  headers = ['Name', 'Age', 'Wood', 'Stone', 'Gold'];
+  headers = ['Name', 'Age', 'Wood', 'Stone', 'Gold', 'More'];
 
   constructor(private layoutService: LayoutService) {}
 

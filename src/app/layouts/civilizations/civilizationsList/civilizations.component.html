@@ -20,6 +20,14 @@
       <td>
         {{ civ.team_bonus }}
       </td>
+      <td>
+        <button
+          [routerLink]="['/civilization', civ.id]"
+          routerLinkActive="active"
+        >
+          >>>
+        </button>
+      </td>
     </tr>
   </table>
 </div>
