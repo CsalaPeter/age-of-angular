@@ -1,7 +1,48 @@
+.element {
+  --red-100: hsl(2, 100%, 35%);
+  --yellow-100: hsl(39, 100%, 75%);
+}
+
 .homeHeader {
-  text-align: center;
+  display: grid;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.hTop,
+.hBot {
   font-size: 3rem;
-  margin-bottom: 5rem;
+  margin: 0;
+  color: hsl(39, 100%, 75%);
+  text-shadow: 4px 4px 8px black, 2px 2px 8px black;
+  z-index: 1;
+}
+
+.hMid {
+  color: hsl(39, 100%, 75%);
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0.7rem;
+  text-shadow: 4px 4px 8px black, 2px 2px 8px black;
+  z-index: 1;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.hNum {
+  font-size: 16rem;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  left: -10px;
+  top: -35px;
+  margin-top: 0;
+  color: hsl(2, 88%, 35%);
+  text-shadow: 4px 4px 8px black, 2px 2px 8px black;
+  letter-spacing: -20px;
 }
 
 .cards {
@@ -20,6 +61,50 @@
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
+}
+
+.civCard {
+  background-image: url(../img/civ.jpg);
+  filter: grayscale(100%);
+  color: white;
+}
+
+.civCard:hover {
+  filter: grayscale(0%);
+  border: 4px solid hsl(2, 100%, 35%);
+}
+
+.unitsCard {
+  background-image: url(../img/units.jpg);
+  filter: grayscale(100%);
+  color: white;
+}
+
+.unitsCard:hover {
+  filter: grayscale(0%);
+  border: 4px solid hsl(2, 100%, 35%);
+}
+
+.structCard {
+  background-image: url(../img/sturcture.jpg);
+  filter: grayscale(100%);
+  color: white;
+}
+
+.structCard:hover {
+  filter: grayscale(0%);
+  border: 4px solid hsl(2, 100%, 35%);
+}
+
+.techCard {
+  background-image: url(../img/tech.jpg);
+  filter: grayscale(100%);
+  color: white;
+}
+
+.techCard:hover {
+  filter: grayscale(0%);
+  border: 4px solid hsl(2, 100%, 35%);
 }
 
 .cardName {
