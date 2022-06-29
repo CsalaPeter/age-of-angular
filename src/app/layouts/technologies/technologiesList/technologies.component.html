@@ -1,42 +1,15 @@
-<h1 class="techHeader">Technologies</h1>
-<div class="tableContainer">
-  <table class="dataTable">
-    <tr>
-      <th class="headers" *ngFor="let header of headers">
-        {{ header }}
-      </th>
-    </tr>
+<h1 class="componentHeader">Technologies</h1>
 
-    <tr *ngFor="let tech of technologies">
-      <td>
-        {{ tech.name }}
-      </td>
-      <td>
-        {{ tech.age }}
-      </td>
-      <td>
-        {{ tech.cost.Wood }}
-      </td>
-      <td>
-        {{ tech.cost.Food }}
-      </td>
-      <td>
-        {{ tech.cost.Stone }}
-      </td>
-      <td>
-        {{ tech.cost.Gold }}
-      </td>
-      <td>
-        {{ tech.description }}
-      </td>
-      <td>
-        <button
-          [routerLink]="['/technology', tech.id]"
-          routerLinkActive="active"
-        >
-          >>>
-        </button>
-      </td>
-    </tr>
-  </table>
+<div class="cardContainer">
+  <div
+    class="card"
+    [routerLink]="['/technology', tech.id]"
+    routerLinkActive="active"
+    *ngFor="let tech of technologies"
+  >
+    <div class="cardName">{{ tech.name }}</div>
+    <div class="cardImg">
+      <img class="image" src="../../../../assets/img/placeholder.png" />
+    </div>
+  </div>
 </div>

@@ -6,21 +6,14 @@ import { LayoutService } from 'src/app/services/layout.service';
 @Component({
   selector: 'app-unites',
   templateUrl: './units.component.html',
-  styleUrls: ['../../../../assets/css/units.component.css'],
+  styleUrls: [
+    '../../../../assets/css/units.component.css',
+    '../../../../assets/css/components.css',
+  ],
 })
 export class UnitsComponent implements OnInit {
   layoutSub?: Subscription;
   units: Unit[] = [];
-  headers = [
-    'Name',
-    'Age',
-    'Wood',
-    'Food',
-    'Stone',
-    'Gold',
-    'Description',
-    'More',
-  ];
 
   constructor(private layoutService: LayoutService) {}
 

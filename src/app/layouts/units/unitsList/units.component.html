@@ -1,39 +1,17 @@
-<h1 class="unitHeader">Units</h1>
-<div class="tableContainer">
-  <table class="dataTable">
-    <tr>
-      <th class="headers" *ngFor="let header of headers">
-        {{ header }}
-      </th>
-    </tr>
+<h1 class="componentHeader">Units</h1>
 
-    <tr *ngFor="let unit of units">
-      <td class="civName">
-        {{ unit.name }}
-      </td>
-      <td>
-        {{ unit.age }}
-      </td>
-      <td>
-        {{ unit.cost.Wood }}
-      </td>
-      <td>
-        {{ unit.cost.Food }}
-      </td>
-      <td>
-        {{ unit.cost.Stone }}
-      </td>
-      <td>
-        {{ unit.cost.Gold }}
-      </td>
-      <td>
-        {{ unit.description }}
-      </td>
-      <td>
-        <button [routerLink]="['/unit', unit.id]" routerLinkActive="active">
-          >>>
-        </button>
-      </td>
-    </tr>
-  </table>
+<div class="cardContainer">
+  <div
+    class="card"
+    [routerLink]="['/unit', unit.id]"
+    routerLinkActive="active"
+    *ngFor="let unit of units"
+  >
+    <div class="cardName">
+      {{ unit.name }}
+    </div>
+    <div class="cardImg">
+      <img class="image" src="../../../../assets/img/placeholder.png" />
+    </div>
+  </div>
 </div>

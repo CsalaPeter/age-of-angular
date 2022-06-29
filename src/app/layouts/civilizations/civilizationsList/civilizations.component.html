@@ -1,33 +1,16 @@
-<h1 class="civHeader">Civilizations</h1>
-<div class="tableContainer">
-  <table class="dataTable">
-    <tr>
-      <th class="headers" *ngFor="let header of headers">
-        {{ header }}
-      </th>
-    </tr>
-
-    <tr *ngFor="let civ of civilizations">
-      <td class="civName">
-        {{ civ.name }}
-      </td>
-      <td>
-        {{ civ.expansion }}
-      </td>
-      <td>
-        {{ civ.army_type }}
-      </td>
-      <td>
-        {{ civ.team_bonus }}
-      </td>
-      <td>
-        <button
-          [routerLink]="['/civilization', civ.id]"
-          routerLinkActive="active"
-        >
-          >>>
-        </button>
-      </td>
-    </tr>
-  </table>
+<h1 class="componentHeader">Civilizations</h1>
+<div class="cardContainer">
+  <div
+    class="card"
+    [routerLink]="['/civilization', civ.id]"
+    routerLinkActive="active"
+    *ngFor="let civ of civilizations"
+  >
+    <div class="cardName">
+      {{ civ.name }}
+    </div>
+    <div class="cardImg">
+      <img class="image" src="../../../../assets/img/placeholder.png" />
+    </div>
+  </div>
 </div>

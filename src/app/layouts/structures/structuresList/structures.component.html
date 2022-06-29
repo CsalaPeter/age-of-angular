@@ -1,36 +1,17 @@
-<h1 class="structHeader">Structures</h1>
-<div class="tableContainer">
-  <table class="dataTable">
-    <tr>
-      <th class="headers" *ngFor="let header of headers">
-        {{ header }}
-      </th>
-    </tr>
+<h1 class="componentHeader">Structures</h1>
 
-    <tr *ngFor="let struct of structures">
-      <td>
-        {{ struct.name }}
-      </td>
-      <td>
-        {{ struct.age }}
-      </td>
-      <td>
-        {{ struct.cost.Wood }}
-      </td>
-      <td>
-        {{ struct.cost.Stone }}
-      </td>
-      <td>
-        {{ struct.cost.Gold }}
-      </td>
-      <td>
-        <button
-          [routerLink]="['/structure', struct.id]"
-          routerLinkActive="active"
-        >
-          >>>
-        </button>
-      </td>
-    </tr>
-  </table>
+<div class="cardContainer">
+  <div
+    class="card"
+    [routerLink]="['/structure', struct.id]"
+    routerLinkActive="active"
+    *ngFor="let struct of structures"
+  >
+    <div class="cardName">
+      {{ struct.name }}
+    </div>
+    <div class="cardImg">
+      <img class="image" src="../../../../assets/img/placeholder.png" />
+    </div>
+  </div>
 </div>

@@ -6,21 +6,14 @@ import { LayoutService } from 'src/app/services/layout.service';
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
-  styleUrls: ['../../../../assets/css/technologies.component.css'],
+  styleUrls: [
+    '../../../../assets/css/technologies.component.css',
+    '../../../../assets/css/components.css',
+  ],
 })
 export class TechnologiesComponent implements OnInit {
   layoutSub?: Subscription;
   technologies: Technology[] = [];
-  headers = [
-    'Name',
-    'Age',
-    'Wood',
-    'Food',
-    'Stone',
-    'Gold',
-    'Description',
-    'More',
-  ];
 
   constructor(private layoutService: LayoutService) {}
 

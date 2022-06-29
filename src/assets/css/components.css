@@ -1,0 +1,54 @@
+.componentHeader {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  color: hsl(39, 100%, 75%);
+  text-shadow: 4px 4px 8px black, 2px 2px 8px black;
+}
+
+.cardContainer {
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: auto;
+}
+
+.card {
+  width: 400px;
+  height: 440px;
+  display: inline;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.cardImg {
+  max-height: 400px;
+  max-width: 400px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid hsl(39, 87%, 41%);
+  overflow: hidden;
+}
+
+.cardName {
+  height: 40px;
+  font-size: 2rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  border-inline: 2px solid hsl(39, 87%, 41%);
+  border-top: 2px solid hsl(39, 87%, 41%);
+  background-color: hsl(352, 88%, 29%);
+  color: hsl(45, 93%, 65%);
+}
+
+.image {
+  max-height: 400px;
+  max-width: 400px;
+}
