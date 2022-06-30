@@ -7,7 +7,10 @@ import { LayoutService } from 'src/app/services/layout.service';
 @Component({
   selector: 'app-civilization',
   templateUrl: './civilization.component.html',
-  styleUrls: ['../../../../assets/css/civilizations.component.css'],
+  styleUrls: [
+    '../../../../assets/css/civilizations.component.css',
+    '../../../../assets/css/components.css',
+  ],
 })
 export class CivilizationComponent implements OnInit {
   civilization!: Civilization;

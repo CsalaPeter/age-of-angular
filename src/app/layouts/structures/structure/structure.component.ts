@@ -7,7 +7,10 @@ import { LayoutService } from 'src/app/services/layout.service';
 @Component({
   selector: 'app-structure',
   templateUrl: './structure.component.html',
-  styleUrls: ['../../../../assets/css/structures.component.css'],
+  styleUrls: [
+    '../../../../assets/css/structures.component.css',
+    '../../../../assets/css/components.css',
+  ],
 })
 export class StructureComponent implements OnInit {
   structure!: Structure;

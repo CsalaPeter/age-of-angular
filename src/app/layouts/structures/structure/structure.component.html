@@ -1,22 +1,48 @@
-<h1 class="structHeader">
+<h1 class="componentHeader">
   {{ structure.name }}
 </h1>
 
-<div>
-  <div>{{ structure.name }}</div>
-  <div>{{ structure.description }}</div>
-  <div>{{ structure.expansion }}</div>
-  <div>{{ structure.age }}</div>
-  <div>{{ structure.cost.Wood }}</div>
-  <div>{{ structure.cost.Food }}</div>
-  <div>{{ structure.cost.Stone }}</div>
-  <div>{{ structure.cost.Stone }}</div>
-  <div>{{ structure.build_time }}</div>
-  <div>{{ structure.hit_points }}</div>
-  <div>{{ structure.line_of_sight }}</div>
-  <div>{{ structure.armor }}</div>
-  <div>{{ structure.range }}</div>
-  <div>{{ structure.relode_time }}</div>
-  <div>{{ structure.attack }}</div>
-  <div>{{ structure.special }}</div>
+<div class="detailView">
+  <div class="pictures">
+    <img class="image" src="../../../../assets/img/placeholder.png" />
+  </div>
+
+  <div class="stringData">
+    <ul>
+      <li>Building description: {{ structure.description }}</li>
+      <li>Buildble at: {{ structure.age }} age</li>
+      <li>Building cost</li>
+      <ul>
+        <li *ngIf="structure.cost.Wood != undefined">
+          {{ structure.cost.Wood }} wood
+        </li>
+        <li *ngIf="structure.cost.Food != undefined">
+          {{ structure.cost.Food }} food
+        </li>
+        <li *ngIf="structure.cost.Stone != undefined">
+          {{ structure.cost.Stone }} stone
+        </li>
+        <li *ngIf="structure.cost.Gold != undefined">
+          {{ structure.cost.Gold }} gold
+        </li>
+      </ul>
+      <li>Building time: {{ structure.build_time }} second</li>
+      <li>Building HP: {{ structure.hit_points }}</li>
+      <li>Building line of sight: {{ structure.line_of_sight }}</li>
+      <li>Building armor: {{ structure.armor }}</li>
+      <li *ngIf="structure.range != undefined">
+        Building attack range: {{ structure.range }}
+      </li>
+      <li *ngIf="structure.attack != undefined">
+        Building damage: {{ structure.attack }}
+      </li>
+      <li *ngIf="structure.relode_time != undefined">
+        Building relode time: {{ structure.relode_time }}
+      </li>
+      <li>Building special(s)</li>
+      <ul>
+        <li *ngFor="let special of structure.special">{{ special }}</li>
+      </ul>
+    </ul>
+  </div>
 </div>

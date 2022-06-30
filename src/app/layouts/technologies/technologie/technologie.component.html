@@ -1,16 +1,40 @@
-<h1 class="techHeader">
+<h1 class="componentHeader">
   {{ technology.name }}
 </h1>
 
-<div>
-  <div>{{ technology.description }}</div>
-  <div>{{ technology.expansion }}</div>
-  <div>{{ technology.age }}</div>
-  <div>{{ building }}</div>
-  <div>{{ technology.cost.Wood }}</div>
-  <div>{{ technology.cost.Food }}</div>
-  <div>{{ technology.cost.Stone }}</div>
-  <div>{{ technology.cost.Gold }}</div>
-  <div>{{ technology.build_time }}</div>
-  <div *ngFor="let unit of units">{{ unit }}</div>
+<div class="detailView">
+  <div class="pictures">
+    <img class="image" src="../../../../assets/img/placeholder.png" />
+  </div>
+
+  <div class="stringData">
+    <ul>
+      <li>Technology description: {{ technology.description }}</li>
+      <li>Available from {{ technology.age }} age</li>
+      <li>Develops in {{ building }}</li>
+      <li>Cost</li>
+      <ul>
+        <li *ngIf="technology.cost.Wood != undefined">
+          {{ technology.cost.Wood }} wood
+        </li>
+        <li *ngIf="technology.cost.Food != undefined">
+          {{ technology.cost.Food }} food
+        </li>
+        <li *ngIf="technology.cost.Stone != undefined">
+          {{ technology.cost.Stone }} stone
+        </li>
+        <li *ngIf="technology.cost.Gold != undefined">
+          {{ technology.cost.Gold }} gold
+        </li>
+      </ul>
+      <li>{{ technology.build_time }} second</li>
+      <li>Applies to</li>
+      <ul *ngFor="let applies of technology.applies_to">
+        <li *ngFor="let unit of units">{{ unit }}</li>
+        <li *ngIf="!applies.includes('https')">
+          {{ applies }}
+        </li>
+      </ul>
+    </ul>
+  </div>
 </div>

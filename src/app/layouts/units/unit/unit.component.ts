@@ -7,7 +7,10 @@ import { LayoutService } from 'src/app/services/layout.service';
 @Component({
   selector: 'app-unit',
   templateUrl: './unit.component.html',
-  styleUrls: ['../../../../assets/css/units.component.css'],
+  styleUrls: [
+    '../../../../assets/css/units.component.css',
+    '../../../../assets/css/components.css',
+  ],
 })
 export class UnitComponent implements OnInit {
   layoutSub?: Subscription;

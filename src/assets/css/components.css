@@ -52,3 +52,24 @@
   max-height: 400px;
   max-width: 400px;
 }
+
+.detailView {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stringData {
+  margin-left: 2rem;
+  font-size: larger;
+}
+
+.pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  margin-block: 5px;
+}
