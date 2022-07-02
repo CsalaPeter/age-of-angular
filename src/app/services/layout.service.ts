@@ -20,41 +20,43 @@ export class LayoutService {
   getAllCivs(): Observable<Civilization[]> {
     return this.http
       .get<GetAllCivilizations>(
-        'https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations'
+        'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations'
       )
       .pipe(map((data: GetAllCivilizations) => data.civilizations));
   }
 
   getCivilization(id: number): Observable<Civilization> {
     return this.http.get<Civilization>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/' + id
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/' +
+        id
     );
   }
 
   getAllStructs(): Observable<Structure[]> {
     return this.http
       .get<GetAllStructures>(
-        'https://age-of-empires-2-api.herokuapp.com/api/v1/structures'
+        'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structures'
       )
       .pipe(map((data: GetAllStructures) => data.structures));
   }
 
   getStructure(id: number): Observable<Structure> {
     return this.http.get<Structure>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' + id
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
+        id
     );
   }
 
   createdIn(buildingName: string): Observable<Structure[]> {
     return this.http.get<Structure[]>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
         buildingName
     );
   }
 
   developsIn(buildingName: string): Observable<Structure[]> {
     return this.http.get<Structure[]>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
         buildingName
     );
   }
@@ -62,46 +64,51 @@ export class LayoutService {
   getAllTechs(): Observable<Technology[]> {
     return this.http
       .get<GetAllTechnologies>(
-        'https://age-of-empires-2-api.herokuapp.com/api/v1/technologies'
+        'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/technologies'
       )
       .pipe(map((data: GetAllTechnologies) => data.technologies));
   }
 
   getTech(id: number): Observable<Technology> {
     return this.http.get<Technology>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/technology/' + id
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/technology/' +
+        id
     );
   }
 
   getUniqueTech(techName: string): Observable<Technology> {
     return this.http.get<Technology>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/technology/' + techName
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/technology/' +
+        techName
     );
   }
 
   getAllUnits(): Observable<Unit[]> {
     return this.http
       .get<GetAllUnits>(
-        'https://age-of-empires-2-api.herokuapp.com/api/v1/units'
+        'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/units'
       )
       .pipe(map((data: GetAllUnits) => data.units));
   }
 
   getUnit(id: number): Observable<Unit> {
     return this.http.get<Unit>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' + id
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' +
+        id
     );
   }
 
   getUniqueUnit(unitName: string): Observable<Unit> {
     return this.http.get<Unit>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' + unitName
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' +
+        unitName
     );
   }
 
   appliesTo(unitName: string): Observable<Unit> {
     return this.http.get<Unit>(
-      'https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' + unitName
+      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' +
+        unitName
     );
   }
 }
