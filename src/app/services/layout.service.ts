@@ -19,61 +19,89 @@ export class LayoutService {
 
   getAllCivs(): Observable<Civilization[]> {
     return this.http
-      .get<GetAllCivilizations>('/api/v1/civilizations')
+      .get<GetAllCivilizations>(
+        'https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations'
+      )
       .pipe(map((data: GetAllCivilizations) => data.civilizations));
   }
 
   getCivilization(id: number): Observable<Civilization> {
-    return this.http.get<Civilization>('/api/v1/civilization/' + id);
+    return this.http.get<Civilization>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/' + id
+    );
   }
 
   getAllStructs(): Observable<Structure[]> {
     return this.http
-      .get<GetAllStructures>('/api/v1/structures')
+      .get<GetAllStructures>(
+        'https://age-of-empires-2-api.herokuapp.com/api/v1/structures'
+      )
       .pipe(map((data: GetAllStructures) => data.structures));
   }
 
   getStructure(id: number): Observable<Structure> {
-    return this.http.get<Structure>('/api/v1/structure/' + id);
+    return this.http.get<Structure>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' + id
+    );
   }
 
   createdIn(buildingName: string): Observable<Structure[]> {
-    return this.http.get<Structure[]>('/api/v1/structure/' + buildingName);
+    return this.http.get<Structure[]>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
+        buildingName
+    );
   }
 
   developsIn(buildingName: string): Observable<Structure[]> {
-    return this.http.get<Structure[]>('/api/v1/structure/' + buildingName);
+    return this.http.get<Structure[]>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
+        buildingName
+    );
   }
 
   getAllTechs(): Observable<Technology[]> {
     return this.http
-      .get<GetAllTechnologies>('/api/v1/technologies')
+      .get<GetAllTechnologies>(
+        'https://age-of-empires-2-api.herokuapp.com/api/v1/technologies'
+      )
       .pipe(map((data: GetAllTechnologies) => data.technologies));
   }
 
   getTech(id: number): Observable<Technology> {
-    return this.http.get<Technology>('/api/v1/technology/' + id);
+    return this.http.get<Technology>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/technology/' + id
+    );
   }
 
   getUniqueTech(techName: string): Observable<Technology> {
-    return this.http.get<Technology>('/api/v1/technology/' + techName);
+    return this.http.get<Technology>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/technology/' + techName
+    );
   }
 
   getAllUnits(): Observable<Unit[]> {
     return this.http
-      .get<GetAllUnits>('/api/v1/units')
+      .get<GetAllUnits>(
+        'https://age-of-empires-2-api.herokuapp.com/api/v1/units'
+      )
       .pipe(map((data: GetAllUnits) => data.units));
   }
 
   getUnit(id: number): Observable<Unit> {
-    return this.http.get<Unit>('/api/v1/unit/' + id);
+    return this.http.get<Unit>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' + id
+    );
   }
 
   getUniqueUnit(unitName: string): Observable<Unit> {
-    return this.http.get<Unit>('/api/v1/unit/' + unitName);
+    return this.http.get<Unit>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' + unitName
+    );
   }
 
   appliesTo(unitName: string): Observable<Unit> {
-    return this.http.get<Unit>('/api/v1/unit/' + unitName);
+    return this.http.get<Unit>(
+      'https://age-of-empires-2-api.herokuapp.com/api/v1/unit/' + unitName
+    );
   }
 }
