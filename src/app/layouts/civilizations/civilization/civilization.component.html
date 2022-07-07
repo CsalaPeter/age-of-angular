@@ -10,30 +10,46 @@
   <div class="stringData">
     <ul>
       <li>
-        Expansion:
-        {{ civilization.expansion }}
+        Description:
+        {{ civilization.description }}
       </li>
       <li>
-        Army type:
-        {{ civilization.army_type }}
+        Continent:
+        {{ civilization.continent }}
       </li>
-      <li>
-        Team Bonus:
-        {{ civilization.team_bonus }}
-      </li>
-      <li>Civilization bonus:</li>
+      <li>Army focus:</li>
       <ul>
-        <li *ngFor="let bonus of civilization.civilization_bonus">
-          {{ bonus }}
+        <li *ngFor="let army_focus of civilization.army_focus">
+          {{ army_focus }}
         </li>
       </ul>
-      <li *ngFor="let unit of uniqueUnites">
-        Unique unites:
-        {{ unit }}
+      <li>Unique units:</li>
+      <ul>
+        <li *ngFor="let units of civilization.unique_units">
+          {{ units }}
+        </li>
+      </ul>
+      <li>Unique technologies:</li>
+      <ul>
+        <li *ngFor="let tech of civilization.unique_technologies">
+          {{ tech }}
+        </li>
+      </ul>
+      <li>Civilization bonuses:</li>
+      <ul>
+        <li
+          *ngFor="let civilization_bonuses of civilization.civilization_bonuses"
+        >
+          {{ civilization_bonuses }}
+        </li>
+      </ul>
+      <li>
+        Team bonus:
+        {{ civilization.team_bonus }}
       </li>
-      <li *ngFor="let tech of uniqueTechs">
-        Unique technologies:
-        {{ tech }}
+      <li>
+        Wonder:
+        {{ civilization.wonder }}
       </li>
     </ul>
   </div>

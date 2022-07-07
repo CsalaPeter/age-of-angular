@@ -13,29 +13,32 @@
       <li>Recruit age: {{ unit.age }}</li>
       <li>Cost</li>
       <ul>
-        <li *ngIf="unit.cost.Wood != undefined">{{ unit.cost.Wood }} wood</li>
-        <li *ngIf="unit.cost.Food != undefined">{{ unit.cost.Food }} food</li>
-        <li *ngIf="unit.cost.Stone != undefined">
-          {{ unit.cost.Stone }} stone
+        <li *ngIf="unit.cost.wood != undefined">{{ unit.cost.wood }} wood</li>
+        <li *ngIf="unit.cost.food != undefined">{{ unit.cost.food }} food</li>
+        <li *ngIf="unit.cost.stone != undefined">
+          {{ unit.cost.stone }} stone
         </li>
-        <li *ngIf="unit.cost.Gold != undefined">{{ unit.cost.Gold }} gold</li>
+        <li *ngIf="unit.cost.gold != undefined">{{ unit.cost.gold }} gold</li>
       </ul>
-      <li>Recruited in: {{ building }}</li>
-      <li>Recruit time: {{ unit.build_time }} second</li>
+      <li>Recruited in: {{ unit.trained_at }}</li>
+      <li>Recruit time: {{ unit.train_time }} second</li>
       <li>Line of sight: {{ unit.line_of_sight }}</li>
       <li>HP: {{ unit.hit_points }}</li>
-      <li>Damage: {{ unit.attack }}</li>
-      <li *ngIf="unit.attack_bonus != undefined">
-        Damage bonus: {{ unit.attack_bonus }}
-      </li>
+      <li *ngIf="unit.attack != undefined">Damage: {{ unit.attack }}</li>
+      <li *ngIf="unit.attack_bonus != undefined">Damage bonus:</li>
+      <ul *ngFor="let attackBonus of unit.attack_bonus">
+        <li>
+          {{ attackBonus }}
+        </li>
+      </ul>
       <li>Armor: {{ unit.armor }}</li>
-      <li *ngIf="unit.armor_bonus != undefined">
-        Armor bonus: {{ unit.armor_bonus }}
-      </li>
-      <li *ngIf="unit.relode_time != undefined">
-        Relode time: {{ unit.relode_time }}
-      </li>
-      <li>Accuracy: {{ unit.accuracy }}</li>
+      <li *ngIf="unit.armor_bonus != undefined">Armor bonus:</li>
+      <ul *ngFor="let armorBonus of unit.armor_bonus">
+        <li>
+          {{ armorBonus }}
+        </li>
+      </ul>
+      <li *ngIf="unit.accuracy != undefined">Accuracy: {{ unit.accuracy }}</li>
       <li *ngIf="unit.blast_radius != undefined">
         Blast radius: {{ unit.blast_radius }} m
       </li>

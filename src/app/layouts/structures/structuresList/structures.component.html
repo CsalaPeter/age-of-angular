@@ -3,12 +3,12 @@
 <div class="cardContainer">
   <div
     class="card"
-    [routerLink]="['/structure', struct.id]"
+    *ngFor="let building of building"
+    [routerLink]="['/structure', building.id]"
     routerLinkActive="active"
-    *ngFor="let struct of structures"
   >
     <div class="cardName">
-      {{ struct.name }}
+      {{ building.name }}
     </div>
     <div class="cardImg">
       <img class="image" src="../../../../assets/img/placeholder.png" />

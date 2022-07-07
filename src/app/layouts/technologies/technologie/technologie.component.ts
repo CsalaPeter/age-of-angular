@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Technology } from 'src/app/models/technologies.model';
 import { LayoutService } from 'src/app/services/layout.service';
+import techList from 'src/app/data/technologies.json';
 
 @Component({
   selector: 'app-technologie',
@@ -24,26 +25,6 @@ export class TechnologieComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.route.data.subscribe(
-      ({ technology }) => (this.technology = technology)
-    );
-
-    this.layoutSub = this.layoutService
-      .getTech(this.technology.id)
-      .subscribe((tech) => (this.technology = tech));
-
-    this.layoutSub = this.layoutService
-      .developsIn(this.technology.develops_in.slice(60))
-      .subscribe((building) => (this.building = building[0].name));
-
-    if (this.technology.applies_to[0].includes('https')) {
-      for (let i = 0; i < this.technology.applies_to.length; i++) {
-        this.layoutSub = this.layoutService
-          .appliesTo(this.technology.applies_to[i].slice(55))
-          .subscribe((unit) => {
-            this.units.push(unit.name);
-          });
-      }
-    }
+    this.route.data.subscribe(({ id }) => (this.technology = techList[id - 1]));
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Structure } from 'src/app/models/structures.model';
-import { LayoutService } from 'src/app/services/layout.service';
+import { Building } from 'src/app/models/buildings.model';
+import buildingList from 'src/app/data/buildings.json';
 
 @Component({
   selector: 'app-structures',
@@ -13,13 +13,9 @@ import { LayoutService } from 'src/app/services/layout.service';
 })
 export class StructuresComponent implements OnInit {
   layoutSub?: Subscription;
-  structures: Structure[] = [];
+  building: Building[] = buildingList;
 
-  constructor(private layoutService: LayoutService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.layoutSub = this.layoutService
-      .getAllStructs()
-      .subscribe((struct) => (this.structures = struct));
-  }
+  ngOnInit(): void {}
 }

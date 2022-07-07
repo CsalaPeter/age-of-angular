@@ -10,24 +10,24 @@
   <div class="stringData">
     <ul>
       <li>Technology description: {{ technology.description }}</li>
-      <li>Available from {{ technology.age }} age</li>
-      <li>Develops in {{ building }}</li>
+      <li>Available from: {{ technology.age }} age</li>
+      <li>Researched at: {{ technology.researched_at }}</li>
       <li>Cost</li>
       <ul>
-        <li *ngIf="technology.cost.Wood != undefined">
-          {{ technology.cost.Wood }} wood
+        <li *ngIf="technology.cost.wood != undefined">
+          {{ technology.cost.wood }} wood
         </li>
-        <li *ngIf="technology.cost.Food != undefined">
-          {{ technology.cost.Food }} food
+        <li *ngIf="technology.cost.food != undefined">
+          {{ technology.cost.food }} food
         </li>
-        <li *ngIf="technology.cost.Stone != undefined">
-          {{ technology.cost.Stone }} stone
+        <li *ngIf="technology.cost.stone != undefined">
+          {{ technology.cost.stone }} stone
         </li>
-        <li *ngIf="technology.cost.Gold != undefined">
-          {{ technology.cost.Gold }} gold
+        <li *ngIf="technology.cost.gold != undefined">
+          {{ technology.cost.gold }} gold
         </li>
       </ul>
-      <li>{{ technology.build_time }} second</li>
+      <li>Research time: {{ technology.research_time }} second</li>
       <li>Applies to</li>
       <ul *ngFor="let applies of technology.applies_to">
         <li *ngFor="let unit of units">{{ unit }}</li>

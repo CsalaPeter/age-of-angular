@@ -2,16 +2,15 @@ export interface Technology {
   id: number;
   name: string;
   description: string;
-  expansion: string;
   age: string;
-  develops_in: string;
+  researched_at: string;
   cost: {
-    Wood: number;
-    Food: number;
-    Stone: number;
-    Gold: number;
+    wood?: number;
+    food?: number;
+    stone?: number;
+    gold?: number;
   };
-  build_time: number;
+  research_time: number;
   applies_to: string[];
 }
 

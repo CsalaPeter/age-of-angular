@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Unit } from 'src/app/models/units.model';
-import { LayoutService } from 'src/app/services/layout.service';
+import unitList from 'src/app/data/units.json';
 
 @Component({
   selector: 'app-unites',
@@ -13,13 +13,9 @@ import { LayoutService } from 'src/app/services/layout.service';
 })
 export class UnitsComponent implements OnInit {
   layoutSub?: Subscription;
-  units: Unit[] = [];
+  units: Unit[] = unitList;
 
-  constructor(private layoutService: LayoutService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.layoutSub = this.layoutService
-      .getAllUnits()
-      .subscribe((unit) => (this.units = unit));
-  }
+  ngOnInit(): void {}
 }

@@ -10,49 +10,48 @@ import { TechnologiesComponent } from '../layouts/technologies/technologiesList/
 import { UnitComponent } from '../layouts/units/unit/unit.component';
 import { UnitsComponent } from '../layouts/units/unitsList/units.component';
 import { Civilization } from '../models/civilizations.model';
-import { Structure } from '../models/structures.model';
+import { Building } from '../models/buildings.model';
 import { Technology } from '../models/technologies.model';
 import { Unit } from '../models/units.model';
-import { LayoutService } from '../services/layout.service';
 import { HomeComponent } from './home.component';
 
 @Injectable({ providedIn: 'root' })
 export class CivilizationResolver implements Resolve<Civilization> {
-  constructor(private service: LayoutService) {}
+  constructor() {}
 
   resolve(route: ActivatedRouteSnapshot): Observable<Civilization> {
     const id = route.params['id'];
-    return this.service.getCivilization(id);
+    return id;
   }
 }
 
 @Injectable({ providedIn: 'root' })
-export class StructureResolver implements Resolve<Structure> {
-  constructor(private service: LayoutService) {}
+export class StructureResolver implements Resolve<Building> {
+  constructor() {}
 
-  resolve(route: ActivatedRouteSnapshot): Observable<Structure> {
+  resolve(route: ActivatedRouteSnapshot): Observable<Building> {
     const id = route.params['id'];
-    return this.service.getStructure(id);
+    return id;
   }
 }
 
 @Injectable({ providedIn: 'root' })
 export class TechnologieResolver implements Resolve<Technology> {
-  constructor(private service: LayoutService) {}
+  constructor() {}
 
   resolve(route: ActivatedRouteSnapshot): Observable<Technology> {
     const id = route.params['id'];
-    return this.service.getTech(id);
+    return id;
   }
 }
 
 @Injectable({ providedIn: 'root' })
 export class UnitResolver implements Resolve<Unit> {
-  constructor(private service: LayoutService) {}
+  constructor() {}
 
   resolve(route: ActivatedRouteSnapshot): Observable<Unit> {
     const id = route.params['id'];
-    return this.service.getUnit(id);
+    return id;
   }
 }
 
@@ -66,7 +65,7 @@ export const homeRoutes: Routes = [
     path: 'civilization/:id',
     component: CivilizationComponent,
     resolve: {
-      civilization: CivilizationResolver,
+      id: CivilizationResolver,
     },
   },
 
@@ -79,7 +78,7 @@ export const homeRoutes: Routes = [
     path: 'structure/:id',
     component: StructureComponent,
     resolve: {
-      structure: StructureResolver,
+      id: StructureResolver,
     },
   },
 
@@ -92,7 +91,7 @@ export const homeRoutes: Routes = [
     path: 'technology/:id',
     component: TechnologieComponent,
     resolve: {
-      technology: TechnologieResolver,
+      id: TechnologieResolver,
     },
   },
 
@@ -105,7 +104,7 @@ export const homeRoutes: Routes = [
     path: 'unit/:id',
     component: UnitComponent,
     resolve: {
-      unit: UnitResolver,
+      id: UnitResolver,
     },
   },
 

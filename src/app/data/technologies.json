@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Supplies",
+    "description": "Militia line costs -15 food",
+    "age": "Feudal Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 75,
+      "gold": 75
+    },
+    "research_time": 35,
+    "applies_to": ["Militia"]
+  },
+
+  {
+    "id": 2,
+    "name": "Squires",
+    "description": "Infantry speed +10%",
+    "age": "Castle Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 100
+    },
+    "research_time": 40,
+    "applies_to": ["Infantry"]
+  },
+
+  {
+    "id": 3,
+    "name": "Arson",
+    "description": "Infantry +2 attack vs standard buildings",
+    "age": "Castle Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 150,
+      "gold": 50
+    },
+    "research_time": 25,
+    "applies_to": ["Infantry"]
+  },
+
+  {
+    "id": 4,
+    "name": "Man-at-Arms",
+    "description": "Upgrade Militia to Man at Arms",
+    "age": "Feudal Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 100,
+      "gold": 40
+    },
+    "research_time": 40,
+    "applies_to": ["Militia"]
+  },
+
+  {
+    "id": 5,
+    "name": "Long Swordsman",
+    "description": "Upgrade Man at Arms to Long Swordsman",
+    "age": "Castle Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 150,
+      "gold": 65
+    },
+    "research_time": 45,
+    "applies_to": ["Man at Arms"]
+  },
+
+  {
+    "id": 6,
+    "name": "Two-Handed Swordsman",
+    "description": "Upgrade Long Swordsman to Two-Handed Swordsman",
+    "age": "Imperial Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 300,
+      "gold": 100
+    },
+    "research_time": 75,
+    "applies_to": ["Long Swordsman"]
+  },
+
+  {
+    "id": 7,
+    "name": "Champion",
+    "description": "Upgrade Two-Handed Swordsman to Champion",
+    "age": "Imperial Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 750,
+      "gold": 350
+    },
+    "research_time": 100,
+    "applies_to": ["Two-Handed Swordsman"]
+  },
+
+  {
+    "id": 8,
+    "name": "Pikeman",
+    "description": "Upgrade Spearman to Pikeman",
+    "age": "Castle Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 215,
+      "gold": 90
+    },
+    "research_time": 45,
+    "applies_to": ["Spearman"]
+  },
+
+  {
+    "id": 9,
+    "name": "Halberdier",
+    "description": "Upgrade Pikeman to Halberdier",
+    "age": "Imperial Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 300,
+      "gold": 600
+    },
+    "research_time": 50,
+    "applies_to": ["Pikeman"]
+  },
+
+  {
+    "id": 10,
+    "name": "Eagle Warrior",
+    "description": "Upgrade Eagle Scout to Eagle Warrior",
+    "age": "Castle Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 200,
+      "gold": 200
+    },
+    "research_time": 50,
+    "applies_to": ["Eagle Scout"]
+  },
+
+  {
+    "id": 11,
+    "name": "Elite Eagle Warrior",
+    "description": "Upgrade Eagle Warrior to Elite Eagle Warrior",
+    "age": "Imperial Age",
+    "researched_at": "Barracks",
+    "cost": {
+      "food": 600,
+      "gold": 600
+    },
+    "research_time": 50,
+    "applies_to": ["Eagle Warrior"]
+  },
+
+  {
+    "id": 12,
+    "name": "Thumb Ring",
+    "description": "Archers fire faster and with 100% accuracy",
+    "age": "Castle Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "wood": 250,
+      "food": 300
+    },
+    "research_time": 45,
+    "applies_to": ["Archers ", "Cavalry Archers"]
+  },
+
+  {
+    "id": 13,
+    "name": "Parthian Tactics",
+    "description": "Mounted archer armor +1/+2 and +2 or +4 attack against Pikemen",
+    "age": " Imperial Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "food": 200,
+      "gold": 250
+    },
+    "research_time": 65,
+    "applies_to": ["Cavalry Archers"]
+  },
+
+  {
+    "id": 14,
+    "name": "Crossbowman",
+    "description": "Upgrade Archer to Crossbowman",
+    "age": "Castle Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "food": 125,
+      "gold": 75
+    },
+    "research_time": 35,
+    "applies_to": ["Archer"]
+  },
+
+  {
+    "id": 15,
+    "name": "Arbalester",
+    "description": "Upgrade Crossbowman to Arbalester",
+    "age": "Imperial Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "food": 350,
+      "gold": 300
+    },
+    "research_time": 50,
+    "applies_to": ["Crossbowman"]
+  },
+
+  {
+    "id": 16,
+    "name": "Elite Skirmisher",
+    "description": "Upgrade Skirmisher to Elite Skirmisher",
+    "age": "Castle Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "wood": 230,
+      "gold": 130
+    },
+    "research_time": 50,
+    "applies_to": ["Skirmisher"]
+  },
+
+  {
+    "id": 17,
+    "name": "Hand Cannoneer",
+    "description": "Upgrade Elite Skirmisher to Hand Cannoneer",
+    "age": "Imperial Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "wood": 300,
+      "gold": 450
+    },
+    "research_time": 50,
+    "applies_to": ["Elite Skirmisher"]
+  },
+
+  {
+    "id": 18,
+    "name": "Heavy Cavalry Archer",
+    "description": "Upgrade Cavalry Archer to Heavy Cavalry Archer",
+    "age": "Imperial Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "food": 900,
+      "gold": 500
+    },
+    "research_time": 50,
+    "applies_to": ["Cavalry Archer"]
+  },
+
+  {
+    "id": 19,
+    "name": "Elite Elephant Archer",
+    "description": "Upgrade Elephant Archer to Elite Elephant Archer",
+    "age": "Imperial Age",
+    "researched_at": "Archery Range",
+    "cost": {
+      "food": 1000,
+      "gold": 600
+    },
+    "research_time": 80,
+    "applies_to": ["Elephant Archer"]
+  },
+
+  {
+    "id": 20,
+    "name": "",
+    "description": "",
+    "age": "",
+    "researched_at": "",
+    "cost": {
+      "wood": 0,
+      "food": 0,
+      "stone": 0,
+      "gold": 0
+    },
+    "research_time": 0,
+    "applies_to": [""]
+  }
+]

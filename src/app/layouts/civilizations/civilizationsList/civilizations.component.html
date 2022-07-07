@@ -2,9 +2,9 @@
 <div class="cardContainer">
   <div
     class="card"
+    *ngFor="let civ of civilizations"
     [routerLink]="['/civilization', civ.id]"
     routerLinkActive="active"
-    *ngFor="let civ of civilizations"
   >
     <div class="cardName">
       {{ civ.name }}

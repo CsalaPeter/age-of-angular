@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Civilization } from 'src/app/models/civilizations.model';
-import { LayoutService } from 'src/app/services/layout.service';
+import civilizationList from 'src/app/data/civilizations.json';
 
 @Component({
   selector: 'app-civilizations',
@@ -13,13 +13,9 @@ import { LayoutService } from 'src/app/services/layout.service';
 })
 export class CivilizationsComponent implements OnInit {
   layoutSub?: Subscription;
-  civilizations: Civilization[] = [];
+  civilizations: Civilization[] = civilizationList;
 
-  constructor(private layoutService: LayoutService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.layoutSub = this.layoutService
-      .getAllCivs()
-      .subscribe((civ) => (this.civilizations = civ));
-  }
+  ngOnInit(): void {}
 }

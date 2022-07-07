@@ -1,5 +1,5 @@
 <h1 class="componentHeader">
-  {{ structure.name }}
+  {{ building.name }}
 </h1>
 
 <div class="detailView">
@@ -9,39 +9,47 @@
 
   <div class="stringData">
     <ul>
-      <li>Building description: {{ structure.description }}</li>
-      <li>Buildble at: {{ structure.age }} age</li>
+      <li>Building description: {{ building.description }}</li>
+      <li>Buildble at: {{ building.age }}</li>
       <li>Building cost</li>
       <ul>
-        <li *ngIf="structure.cost.Wood != undefined">
-          {{ structure.cost.Wood }} wood
+        <li *ngIf="building.cost.Wood != undefined">
+          {{ building.cost.Wood }} wood
         </li>
-        <li *ngIf="structure.cost.Food != undefined">
-          {{ structure.cost.Food }} food
+        <li *ngIf="building.cost.Food != undefined">
+          {{ building.cost.Food }} food
         </li>
-        <li *ngIf="structure.cost.Stone != undefined">
-          {{ structure.cost.Stone }} stone
+        <li *ngIf="building.cost.Stone != undefined">
+          {{ building.cost.Stone }} stone
         </li>
-        <li *ngIf="structure.cost.Gold != undefined">
-          {{ structure.cost.Gold }} gold
+        <li *ngIf="building.cost.Gold != undefined">
+          {{ building.cost.Gold }} gold
         </li>
       </ul>
-      <li>Building time: {{ structure.build_time }} second</li>
-      <li>Building HP: {{ structure.hit_points }}</li>
-      <li>Building line of sight: {{ structure.line_of_sight }}</li>
-      <li>Building armor: {{ structure.armor }}</li>
-      <li *ngIf="structure.range != undefined">
-        Building attack range: {{ structure.range }}
+      <li>Building time: {{ building.build_time }} second</li>
+      <li>Building HP:</li>
+      <ul *ngFor="let hp of building.hit_points">
+        <li>{{ hp }}</li>
+      </ul>
+      <li>Building line of sight: {{ building.line_of_sight }}</li>
+      <li>Building armor:</li>
+      <ul *ngFor="let armor of building.armor">
+        <li>
+          {{ armor }}
+        </li>
+      </ul>
+      <li *ngIf="building.range != undefined">
+        Building attack range: {{ building.range }}
       </li>
-      <li *ngIf="structure.attack != undefined">
-        Building damage: {{ structure.attack }}
+      <li *ngIf="building.attack != undefined">
+        Building damage: {{ building.attack }}
       </li>
-      <li *ngIf="structure.relode_time != undefined">
-        Building relode time: {{ structure.relode_time }}
+      <li *ngIf="building.rate_of_fire != undefined">
+        Building relode time: {{ building.rate_of_fire }}
       </li>
-      <li>Building special(s)</li>
+      <li *ngIf="building.special != undefined">Building special(s)</li>
       <ul>
-        <li *ngFor="let special of structure.special">{{ special }}</li>
+        <li *ngFor="let special of building.special">{{ special }}</li>
       </ul>
     </ul>
   </div>

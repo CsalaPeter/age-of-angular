@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Unit } from 'src/app/models/units.model';
 import { LayoutService } from 'src/app/services/layout.service';
+import unitList from 'src/app/data/units.json';
 
 @Component({
   selector: 'app-unit',
@@ -23,14 +24,6 @@ export class UnitComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.route.data.subscribe(({ unit }) => (this.unit = unit));
-
-    this.layoutSub = this.layoutService
-      .getUnit(this.unit.id)
-      .subscribe((unit) => (this.unit = unit));
-
-    this.layoutSub = this.layoutService
-      .createdIn(this.unit.created_in.slice(60))
-      .subscribe((building) => (this.building = building[0].name));
+    this.route.data.subscribe(({ id }) => (this.unit = unitList[id - 1]));
   }
 }

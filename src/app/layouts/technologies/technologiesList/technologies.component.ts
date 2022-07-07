@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Technology } from 'src/app/models/technologies.model';
-import { LayoutService } from 'src/app/services/layout.service';
+import techList from 'src/app/data/technologies.json';
 
 @Component({
   selector: 'app-technologies',
@@ -13,13 +13,9 @@ import { LayoutService } from 'src/app/services/layout.service';
 })
 export class TechnologiesComponent implements OnInit {
   layoutSub?: Subscription;
-  technologies: Technology[] = [];
+  technologies: Technology[] = techList;
 
-  constructor(private layoutService: LayoutService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.layoutSub = this.layoutService
-      .getAllTechs()
-      .subscribe((tech) => (this.technologies = tech));
-  }
+  ngOnInit(): void {}
 }

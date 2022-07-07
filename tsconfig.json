@@ -17,7 +17,9 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
-    "lib": ["es2020", "dom", "es5", "es6", "dom.iterable"]
+    "lib": ["es2020", "dom", "es5", "es6", "dom.iterable"],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

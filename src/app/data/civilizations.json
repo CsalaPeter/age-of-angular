@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "name": "Celts",
+    "description": "In the rolling landscapes of Britain and Ireland, minor chiefdoms grew into formidable kingdoms ruling their surroundings from powerful strongholds. Dominate the highlands with swift infantry, terrorize opponents with swarms of Woad Raiders, and unleash the Furor Celtica upon your enemies with durable, fast-firing siege engines. Your legacy will mix history and legend for centuries to come!",
+    "continent": "Europe",
+    "army_focus": ["Infantry", "Siege weapons"],
+    "unique_units": ["Woad Raider"],
+    "unique_technologies": ["Strongholad", "Furor Celtica"],
+    "civilization_bonuses": [
+      "Infantry units move 15% faster starting from the Feudal Age",
+      "Lumberjacks work 15% faster",
+      "Siege weapons fire 25% faster",
+      "Enemy herdables can be converted regardless of enemy units next to them"
+    ],
+    "team_bonus": "Siege Workshops work 20% faster",
+    "wonder": "Rock of Cashel"
+  },
+  {
+    "id": 2,
+    "name": "Franks",
+    "description": "Rule the hardy folk of the Francisca axe and establish a dynasty worthy to follow in the footsteps of the Romans! Seize the English crown, lead chivalrous knights and fierce infantry to victories as far away as the Holy Land, and construct imposing castles to defend your productive farmers from enemy incursions. The Frankish unique unit is the Throwing Axeman, a ruthless warrior whose axes spell death to anything that dares to step within range.",
+    "continent": "Europe",
+    "army_focus": ["Cavalry"],
+    "unique_units": ["Throwing Axeman"],
+    "unique_technologies": ["Bearded Axe", "Chivalry"],
+    "civilization_bonuses": [
+      "Farm upgrades are free",
+      "Castles are 25% cheaper",
+      "Mounted units have +20% HP (starting in the Feudal Age)",
+      "Foragers work 15% faster"
+    ],
+    "team_bonus": "Knights have +2 Line of Sight",
+    "wonder": "St. Vitus Cathedral"
+  },
+  {
+    "id": 3,
+    "name": "Spanish",
+    "description": "After the Berbers demolished the Visigoth kingdom of Iberia, the last remnants of resistance took up arms in the mountains of Asturias and strove to slowly turn the tide. Launch the Reconquista, lead deadly galleons of Conquistadors overseas to explore and conquer unknown lands, and experience the horrors of the Spanish Inquisition. From the tyranny of Pedro the Cruel to the heroism and tolerance of El Cid, the path to follow is yours to choose.",
+    "continent": "Europe",
+    "army_focus": ["Gunpowder units", "Monks"],
+    "unique_units": ["Conquistador", "Missionary"],
+    "unique_technologies": ["Inquisition", "Supremacy"],
+    "civilization_bonuses": [
+      "Builders work 30% faster (20% for Wonders)",
+      "Blacksmith upgrades don't cost gold",
+      "Cannon Galleon projectiles have Ballistics-like accuracy and move faster",
+      "Gunpowder units fire 18% faster"
+    ],
+    "team_bonus": "Trade units generate +25% gold",
+    "wonder": "Torre del Oro"
+  },
+  {
+    "id": 4,
+    "name": "Teutons",
+    "description": "Charlemagne's empire has fallen, and the task of rebuilding the Holy Roman Empire lies in your hands. Unite the feuding duchies, contend with Papal authority, and construct powerful crenellated fortifications! Smash enemy armies with potent knights and demolish their cities with armored siege engines, or lead your men on crusade to the Holy Land or into Eastern Europe. The Teuton unique unit is the Teutonic Knight, a zealous warrior who can carve most melee units into ribbons.",
+    "continent": "Europe",
+    "army_focus": ["Infantry"],
+    "unique_units": ["Teutonic Knight"],
+    "unique_technologies": ["Ironclad", "Crenellations"],
+    "civilization_bonuses": [
+      "Monks have double healing range",
+      "Towers garrison twice as many units",
+      "Murder Holes and Herbal Medicine are free",
+      "Farms are 40% cheaper",
+      "Town Centers can garrison +10 units",
+      "Barracks and Stable units receive +1/+2 melee armor in the Castle/Imperial Age"
+    ],
+    "team_bonus": "Units resist conversion",
+    "wonder": "Maria Laach Abbey"
+  },
+
+  {
+    "id": 5,
+    "name": "Italians",
+    "description": "Shed off the burden of the barbarian invasions that have torn your beloved peninsula apart after the collapse of the Western Roman Empire. Take the role as general of one of the Italian city-states — Genoa, Venice, Pisa, Ragusa, Amalfi, or even the Papal States — that emerged in the chaos and restore the might that once shone from your lands. Lead armies of Condottieri and Genoese Crossbowmen to glory or establish a trade network that dominates the Silk Road! The choice of which history to write is yours.",
+    "continent": "Europe",
+    "army_focus": ["Archers", "Navy"],
+    "unique_units": ["Genoese Crossbowman", "Condottiero"],
+    "unique_technologies": ["Pavise", "Silk Road"],
+    "civilization_bonuses": [
+      "Advancing to the next Age is 15% cheaper",
+      "Dock and University technologies are 33% cheaper",
+      "Fishing Ships are 15% cheaper",
+      "Gunpowder units are 20% cheaper"
+    ],
+    "team_bonus": "Condottieri are available at the Barracks",
+    "wonder": "Cathedral of St.Lawrence"
+  },
+
+  {
+    "id": 6,
+    "name": "Byzantines",
+    "description": "While the Western Roman Empire decayed and collapsed, its eastern half in Byzantium remained an imperial titan for centuries to come. Repulse countless invasions with imposing fortifications, command vast and versatile armies amassed from within and outside your borders, and immolate enemy fleets with siphons of Greek Fire. Your heavily-armored Cataphracts inspire fear from the Danube to the Euphrates while your scholars propel you into a new age of technology and learning!",
+    "continent": "Europe",
+    "army_focus": ["Defense"],
+    "unique_units": ["Cataphract"],
+    "unique_technologies": ["Greek Fire", "Logistica"],
+    "civilization_bonuses": [
+      "Buildings have +10%/+20%/+30%/+40% more HP in the Dark/Feudal/Castle/Imperial Age",
+      "Camel Riders, Skirmishers, and the Spearman lines are 25% cheaper",
+      "Fire Ships fire 25% faster",
+      "Advancing to the Imperial Age is 33% cheaper",
+      "Town Watch and Town Patrol are free"
+    ],
+    "team_bonus": "Monks heal 100% faster.",
+    "wonder": "Hagia Sophia"
+  },
+
+  {
+    "id": 7,
+    "name": "Goths",
+    "description": "The mere mention of the Goths struck terror into the inhabitants of the Roman Empire. Migrate across thousands of miles and overwhelm your enemies with floods of infantry numerous as the grains of sand on a beach. Drive a once-great empire into anarchy, distribute plunder to your warbands, and establish your own kingdom where others once stood. Your Huskarls, pride of any chieftain or king, fear neither barbed arrow nor spear.",
+    "continent": "Europe",
+    "army_focus": ["Infantry"],
+    "unique_units": ["Huskarl"],
+    "unique_technologies": ["Anarchy", "Perfusion"],
+    "civilization_bonuses": [
+      "Infantry are 20%/25%/30%/35% cheaper in the Dark/Feudal/Castle/Imperial Age",
+      "nfantry have +1/+2/+3 attack bonus against standard buildings in the Feudal/Castle/Imperial Age",
+      "Villagers have +5 attack against aggressive huntables and carry +15 food from hunting",
+      "Loom is researched instantly",
+      "+10 population cap in the Imperial Age"
+    ],
+    "team_bonus": "Barracks work 20% faster",
+    "wonder": "Mausoleum of Theoderic I"
+  },
+
+  {
+    "id": 8,
+    "name": "Magyars",
+    "description": "During the 8th and 9th centuries, an intrepid group of nomads undertook an epic migration west and established a powerful kingdom in the Carpathian Basin. Take command of the fiercest cavalry forces that Europe had ever witnessed in the Middle Ages and decimate your enemies with brutal raids and deft maneuvers as you relive the Honfoglalás. Lead the mighty Corvinian Army of Huszars in defense of the Hungarian plains and use recurve bows to transfix your enemies with a barrage of arrows!",
+    "continent": "Europe",
+    "army_focus": ["Cavalry"],
+    "unique_units": ["Magyar Huszar"],
+    "unique_technologies": ["Corvinian Army", "Recurve Bow"],
+    "civilization_bonuses": [
+      "Forging, Iron Casting, and Blast Furnace are free",
+      "Scout Cavalry line is 15% cheaper",
+      "Villagers kill wild animals in one strike"
+    ],
+    "team_bonus": "Foot archers (except Skirmishers) have +2 Line of Sight",
+    "wonder": "Hunyad Castle"
+  },
+
+  {
+    "id": 9,
+    "name": "Cumans",
+    "description": "The vast Eurasian plains were home to nomadic tribes whose steppe husbandry and fearsome exploits still live on in the records of their terrified neighbors. Lead the Cuman-Kipchak hordes to war and pillage to your heart's content, or offer your riders as coveted mercenaries in the service of foreign kings. When an even greater threat looms to the east, will you migrate west and adopt the lifestyle and warcraft of your sedentary neighbors, or vanish before an unstoppable wave of Mongol conquerors?",
+    "continent": "Europe",
+    "army_focus": ["Cavalry"],
+    "unique_units": ["Kipchak"],
+    "unique_technologies": ["Steppe Husbandry", "Cuman Mercenaries"],
+    "civilization_bonuses": [
+      "A second Town Center can be built in the Feudal Age",
+      "Archery Ranges and Stables cost -75 wood",
+      "Siege Workshop and Battering Ram available in Feudal Age; Capped Ram upgrade available in Castle Age",
+      "Mounted units move 5%/10%/15% faster in Feudal/Castle/Imperial Age"
+    ],
+    "team_bonus": "Palisade Walls have +33% hit points",
+    "wonder": "Sarkel Fortress"
+  },
+
+  {
+    "id": 10,
+    "name": "Slavs",
+    "description": "While new kingdoms formed from the ruins of the Roman Empire in Western Europe, Slavic tribes settled the rich lands of Central and Eastern Europe and established formidable states of their own. Illuminate your populations with the teachings of Orthodoxy, recreate the rich farming and trade economies of Poland and Kievan Rus, assemble retinues of Boyars and Druzhina to defend the Russian principalities from the Mongols, or lead a charge of Winged Hussars to save Europe from Ottoman conquest!",
+    "continent": "Europe",
+    "army_focus": ["Infantry", "Siege weapons"],
+    "unique_units": ["Boyar"],
+    "unique_technologies": ["Detinets", "Druzhina"],
+    "civilization_bonuses": [
+      "Farmers work 10% faster",
+      "Supplies is free",
+      "Siege Workshop units are 15% cheaper"
+    ],
+    "team_bonus": "Military buildings (excluding Castles and Docks) provide +5 population",
+    "wonder": "Kizhi Church"
+  },
+
+  {
+    "id": 11,
+    "name": "Bulgarians",
+    "description": "When nomadic Bulgar horsemen approached the Danube in the 7th century and encountered the local Slavic tribes, the stirrups that they brought changed European cavalry warfare forever. Fortify the nearby mountain passes with formidable Kreposts and punish overconfident invaders with powerful combined armies of cavalry, infantry, and siege engines! Your valiant Konniks, the pride of your army, will continue to fight fearlessly even after their horses are felled beneath them.",
+    "continent": "Europe",
+    "army_focus": ["Infantry", "Cavalry"],
+    "unique_units": ["Konnik"],
+    "unique_technologies": ["Stirrups", "Bagains"],
+    "civilization_bonuses": [
+      "Militia line units are upgraded for free",
+      "Town Centers cost -50% stone",
+      "Blacksmith and Siege Workshop technologies cost -50% food",
+      "Can build Krepost"
+    ],
+    "team_bonus": "Blacksmiths work 80% faster",
+    "wonder": "Preslav Round Church"
+  }
+]

@@ -1,0 +1,399 @@
+[
+  {
+    "id": 1,
+    "name": "Villager",
+    "description": "Gathers wood, food, stone, gold. Builds and repairs buildings. Also repairs ships, siege weapons.",
+    "age": "Dark Age",
+    "trained_at": "Town Center",
+    "cost": {
+      "food": 50
+    },
+    "train_time": 25,
+    "movement_speed": 0.8,
+    "line_of_sight": 4,
+    "hit_points": 25,
+    "range": 0,
+    "attack": 3,
+    "attack_speed": 2.0,
+    "armor": 0,
+    "attack_bonus": ["+6 vs stone defense", "+3 vs Building"]
+  },
+
+  {
+    "id": 2,
+    "name": "Militia",
+    "description": "Basic infantry swordsman. Cheap and quick to create.",
+    "age": "Dark Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 60,
+      "gold": 20
+    },
+    "train_time": 21,
+    "movement_speed": 0.9,
+    "line_of_sight": 4,
+    "hit_points": 40,
+    "attack": 4,
+    "attack_speed": 2.0,
+    "armor": 1
+  },
+
+  {
+    "id": 3,
+    "name": "Man-at-Arms",
+    "description": "Stronger than Militia. Cheap and quick to create.",
+    "age": "Feudal Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 60,
+      "gold": 20
+    },
+    "train_time": 21,
+    "movement_speed": 0.9,
+    "line_of_sight": 4,
+    "hit_points": 0,
+    "attack": 6,
+    "attack_speed": 2.0,
+    "armor": 1,
+    "attack_bonus": ["+2 vs Eagle Warrior", "+2 vs Standard building"]
+  },
+
+  {
+    "id": 4,
+    "name": "Long Swordsman",
+    "description": "Stronger than Man-at-Arms. Cheap and quick to create.",
+    "age": "Castle Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 60,
+      "gold": 20
+    },
+    "train_time": 21,
+    "movement_speed": 0.9,
+    "line_of_sight": 4,
+    "hit_points": 60,
+    "attack": 9,
+    "attack_speed": 2.0,
+    "armor": 2,
+    "attack_bonus": ["+6 vs Eagle Warrior", "+3 vs Standard building"]
+  },
+
+  {
+    "id": 5,
+    "name": "Two-Handed Swordsman",
+    "description": "Stronger than Long Swordsman. Cheap and quick to create.",
+    "age": "Imperial Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 60,
+      "gold": 20
+    },
+    "train_time": 21,
+    "movement_speed": 0.9,
+    "line_of_sight": 5,
+    "hit_points": 60,
+    "attack": 12,
+    "attack_speed": 2.0,
+    "armor": 2,
+    "attack_bonus": ["+8 vs Eagle Warrior", "+4 vs Standard building"]
+  },
+
+  {
+    "id": 6,
+    "name": "Champion",
+    "description": "Stronger than Two-Handed Swordsman. Cheap and quick to create.",
+    "age": "Imperial Age",
+    "trained_at": " Barracks",
+    "cost": {
+      "food": 60,
+      "gold": 20
+    },
+    "train_time": 21,
+    "movement_speed": 0.9,
+    "line_of_sight": 5,
+    "hit_points": 60,
+    "attack": 13,
+    "attack_speed": 2.0,
+    "armor": 2,
+    "attack_bonus": ["+8 vs Eagle Warrior", "+4 vs Standard building"]
+  },
+
+  {
+    "id": 7,
+    "name": "Spearman",
+    "description": "Medium infantry.",
+    "age": "Feudal Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "wood": 25,
+      "food": 35
+    },
+    "train_time": 22,
+    "movement_speed": 1,
+    "line_of_sight": 4,
+    "hit_points": 45,
+    "attack": 3,
+    "attack_speed": 3.0,
+    "armor": 0,
+    "attack_bonus": [
+      "+15 vs Cavalry",
+      "+15 vs War elephant",
+      "+12 vs Camel",
+      "+9 vs Ship",
+      "+9 vs Fishing Ship",
+      "+4 vs Mameluke",
+      "+1 vs Eagle Warrior",
+      "+1 vs Standard building"
+    ]
+  },
+
+  {
+    "id": 8,
+    "name": "Pikeman",
+    "description": "Stronger than Spearman. Medium infantry.",
+    "age": "Castle Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "wood": 25,
+      "food": 35
+    },
+    "train_time": 22,
+    "movement_speed": 1,
+    "line_of_sight": 4,
+    "hit_points": 55,
+    "attack": 4,
+    "attack_speed": 3.0,
+    "armor": 0,
+    "attack_bonus": [
+      "+25 vs War elephant",
+      "+22 vs Cavalry",
+      "+18 vs Camel",
+      "+16 vs Ship",
+      "+16 vs Fishing Ship",
+      "+11 vs Mameluke",
+      "+1 vs Eagle Warrior",
+      "+1 vs Standard building"
+    ]
+  },
+
+  {
+    "id": 9,
+    "name": "Halberdier",
+    "description": "Stronger than Pikeman. Medium infantry.",
+    "age": "Imperial Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "wood": 25,
+      "food": 35
+    },
+    "train_time": 22,
+    "movement_speed": 1,
+    "line_of_sight": 4,
+    "hit_points": 60,
+    "attack": 6,
+    "attack_speed": 3.0,
+    "armor": 0,
+    "attack_bonus": [
+      "+32 vs Cavalry",
+      "+28 vs War elephant",
+      "+26 vs Camel",
+      "+17 vs Ship",
+      "+17 vs Fishing Ship",
+      "+11 vs Mameluke",
+      "+1 vs Eagle Warrior",
+      "+1 vs Standard building"
+    ]
+  },
+
+  {
+    "id": 10,
+    "name": "Eagle Scout",
+    "description": "Fast infantry for scouting and raiding. Resistant to conversion.",
+    "age": "Feudal Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 20,
+      "gold": 50
+    },
+    "train_time": 60,
+    "movement_speed": 1.1,
+    "line_of_sight": 5,
+    "hit_points": 50,
+    "attack": 4,
+    "attack_speed": 2.0,
+    "armor": 2,
+    "attack_bonus": ["+8 vs Monk", "+3 vs Siege weapon"]
+  },
+
+  {
+    "id": 11,
+    "name": "Eagle Warrior",
+    "description": "Fast infantry for scouting and raiding. Resistant to conversion.",
+    "age": "Castle Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 20,
+      "gold": 50
+    },
+    "train_time": 35,
+    "movement_speed": 1.15,
+    "line_of_sight": 6,
+    "hit_points": 55,
+    "attack": 7,
+    "attack_speed": 2.0,
+    "armor": 3,
+    "attack_bonus": [
+      "+8 vs Monk",
+      "+3 vs Cavalry",
+      "+3 vs Siege weapon",
+      "+2 vs Camel",
+      "+1 vs Ship",
+      "+1 vs Fishing Ship"
+    ]
+  },
+
+  {
+    "id": 12,
+    "name": "Elite Eagle Warrior",
+    "description": "Fast infantry for scouting and raiding. Resistant to conversion.",
+    "age": "Imperial Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 20,
+      "gold": 50
+    },
+    "train_time": 20,
+    "movement_speed": 1.3,
+    "line_of_sight": 6,
+    "hit_points": 60,
+    "attack": 9,
+    "attack_speed": 2.0,
+    "armor": 4,
+    "attack_bonus": [
+      "+10 vs Monk",
+      "+5 vs Siege weapon",
+      "+4 vs Cavalry",
+      "+3 vs Camel",
+      "+2 vs Ship",
+      "+2 vs Fishing Ship"
+    ]
+  },
+
+  {
+    "id": 13,
+    "name": "Condottiero",
+    "description": "Italian mercenary unit. Quick infantry.",
+    "age": "Imperial Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 50,
+      "gold": 35
+    },
+    "train_time": 18,
+    "movement_speed": 1.2,
+    "line_of_sight": 6,
+    "hit_points": 80,
+    "attack": 10,
+    "attack_speed": 1.9,
+    "armor": 1,
+    "attack_bonus": ["+10 vs Gunpowder unit", "+2 vs Standard building"]
+  },
+
+  {
+    "id": 14,
+    "name": "Huskarl",
+    "description": "Gothic unique infantry unit with high pierce armor.",
+    "age": "Castle Age",
+    "trained_at": "Barracks",
+    "cost": {
+      "food": 56,
+      "gold": 28
+    },
+    "train_time": 13,
+    "movement_speed": 1.05,
+    "line_of_sight": 3,
+    "hit_points": 60,
+    "attack": 10,
+    "attack_speed": 2,
+    "armor": 6,
+    "attack_bonus": ["+6 vs Archer", "+2 Eagle Warrior"]
+  },
+
+  {
+    "id": 15,
+    "name": "Monk",
+    "description": "Converts enemy units to your civilization. Heals friendly units (except ships and siege weapons). Can collect Relics and bring them to Monasteries.",
+    "age": "Castle Age",
+    "trained_at": "Monastery",
+    "cost": {
+      "gold": 100
+    },
+    "train_time": 51,
+    "movement_speed": 0.7,
+    "line_of_sight": 11,
+    "hit_points": 30,
+    "range": 9,
+    "armor": 0
+  },
+
+  {
+    "id": 16,
+    "name": "Missionary",
+    "description": "Spanish unique unit. Mounted Monk. Converts enemy units and heals friendly units like Monks, but cannot pick up Relics.",
+    "age": "Castle Age",
+    "trained_at": "Monastery",
+    "cost": {
+      "gold": 100
+    },
+    "train_time": 51,
+    "movement_speed": 1.1,
+    "line_of_sight": 9,
+    "hit_points": 20,
+    "range": 7,
+    "attack_speed": 62,
+    "armor": 0
+  },
+
+  {
+    "id": 17,
+    "name": "Trade Cart",
+    "description": "Used to trade with other players by land.",
+    "age": "Feudal Age",
+    "trained_at": "Market",
+    "cost": {
+      "wood": 100,
+      "gold": 50
+    },
+    "train_time": 51,
+    "movement_speed": 1.0,
+    "line_of_sight": 7,
+    "hit_points": 70,
+    "armor": 0
+  },
+
+  {
+    "id": 18,
+    "name": "string",
+    "description": "string",
+    "age": "string",
+    "trained_at": "string",
+    "cost": {
+      "wood": 0,
+      "food": 0,
+      "stone": 0,
+      "gold": 0
+    },
+    "train_time": 0,
+    "movement_speed": 0,
+    "line_of_sight": 0,
+    "hit_points": 0,
+    "range": 0,
+    "attack": 0,
+    "attack_speed": 0,
+    "armor": 0,
+    "attack_bonus": ["string"],
+    "armor_bonus": ["string"],
+    "accuracy": "string",
+    "blast_radius": 0
+  }
+]

@@ -2,29 +2,26 @@ export interface Unit {
   id: number;
   name: string;
   description: string;
-  expansion: string;
   age: string;
-  created_in: string;
+  trained_at: string;
   cost: {
-    Wood: number;
-    Food: number;
-    Stone: number;
-    Gold: number;
+    wood?: number;
+    food?: number;
+    stone?: number;
+    gold?: number;
   };
-  build_time: number;
-  relode_time: number;
-  attack_delay: number;
-  movment_rate: number;
-  hit_points: number;
+  train_time: number;
+  movement_speed: number;
   line_of_sight: number;
-  range: string;
-  attack: number;
-  armor: string;
-  attack_bonus: string[];
-  armor_bonus: string[];
-  search_radius: number;
-  accuracy: string;
-  blast_radius: number;
+  hit_points: number;
+  range?: number;
+  attack?: number;
+  attack_speed?: number;
+  armor: number;
+  attack_bonus?: string[];
+  armor_bonus?: string[];
+  accuracy?: string;
+  blast_radius?: number;
 }
 
 export interface GetAllUnits {

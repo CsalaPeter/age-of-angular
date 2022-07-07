@@ -6,7 +6,7 @@ import type {
 } from '../models/civilizations.model';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { GetAllStructures, Structure } from '../models/structures.model';
+import { GetAllBuildings, Building } from '../models/buildings.model';
 import type {
   GetAllTechnologies,
   Technology,
@@ -26,36 +26,33 @@ export class LayoutService {
   }
 
   getCivilization(id: number): Observable<Civilization> {
-    return this.http.get<Civilization>(
-      'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/' +
-        id
-    );
+    return this.http.get<Civilization>('src/app/data/civilizations.json');
   }
 
-  getAllStructs(): Observable<Structure[]> {
+  getAllStructs(): Observable<Building[]> {
     return this.http
-      .get<GetAllStructures>(
+      .get<GetAllBuildings>(
         'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structures'
       )
-      .pipe(map((data: GetAllStructures) => data.structures));
+      .pipe(map((data: GetAllBuildings) => data.structures));
   }
 
-  getStructure(id: number): Observable<Structure> {
-    return this.http.get<Structure>(
+  getStructure(id: number): Observable<Building> {
+    return this.http.get<Building>(
       'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
         id
     );
   }
 
-  createdIn(buildingName: string): Observable<Structure[]> {
-    return this.http.get<Structure[]>(
+  createdIn(buildingName: string): Observable<Building[]> {
+    return this.http.get<Building[]>(
       'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
         buildingName
     );
   }
 
-  developsIn(buildingName: string): Observable<Structure[]> {
-    return this.http.get<Structure[]>(
+  developsIn(buildingName: string): Observable<Building[]> {
+    return this.http.get<Building[]>(
       'https://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/structure/' +
         buildingName
     );

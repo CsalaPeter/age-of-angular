@@ -1,12 +1,14 @@
 export interface Civilization {
   id: number;
   name: string;
-  expansion: string;
-  army_type: string;
-  unique_unit: string[];
-  unique_tech: string[];
+  description: string;
+  continent: string;
+  army_focus: string[];
+  unique_units: string[];
+  unique_technologies: string[];
+  civilization_bonuses: string[];
   team_bonus: string;
-  civilization_bonus: string[];
+  wonder: string;
 }
 
 export interface GetAllCivilizations {

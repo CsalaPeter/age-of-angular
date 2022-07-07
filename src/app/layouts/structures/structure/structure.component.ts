@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { Structure } from 'src/app/models/structures.model';
-import { LayoutService } from 'src/app/services/layout.service';
+import { Building } from 'src/app/models/buildings.model';
+import buildingList from 'src/app/data/buildings.json';
 
 @Component({
   selector: 'app-structure',
@@ -13,21 +13,14 @@ import { LayoutService } from 'src/app/services/layout.service';
   ],
 })
 export class StructureComponent implements OnInit {
-  structure!: Structure;
+  building!: Building;
   layoutSub?: Subscription;
 
-  constructor(
-    private layoutService: LayoutService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.data.subscribe(({ structure }) => {
-      this.structure = structure;
+    this.route.data.subscribe(({ id }) => {
+      this.building = buildingList[id - 1];
     });
-
-    this.layoutSub = this.layoutService
-      .getStructure(this.structure.id)
-      .subscribe((struct) => (this.structure = struct));
   }
 }
