@@ -6,12 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CivilizationsComponent } from './layouts/civilizations/civilizationsList/civilizations.component';
-import { StructuresComponent } from './layouts/structures/structuresList/structures.component';
+import { BuildingsComponent } from './layouts/buildings/buildingsList/buildings.component';
 import { TechnologiesComponent } from './layouts/technologies/technologiesList/technologies.component';
 import { UnitsComponent } from './layouts/units/unitsList/units.component';
 import { CivilizationComponent } from './layouts/civilizations/civilization/civilization.component';
-import { StructureComponent } from './layouts/structures/structure/structure.component';
-import { TechnologieComponent } from './layouts/technologies/technologie/technologie.component';
+import { BuildingComponent } from './layouts/buildings/building/building.component';
+import { TechnologyComponent } from './layouts/technologies/technology/technology.component';
 import { UnitComponent } from './layouts/units/unit/unit.component';
 
 @NgModule({
@@ -21,11 +21,11 @@ import { UnitComponent } from './layouts/units/unit/unit.component';
     CivilizationsComponent,
     CivilizationComponent,
     TechnologiesComponent,
-    TechnologieComponent,
+    TechnologyComponent,
     UnitsComponent,
     UnitComponent,
-    StructuresComponent,
-    StructureComponent,
+    BuildingsComponent,
+    BuildingComponent,
   ],
   imports: [HttpClientModule, BrowserModule, AppRoutingModule],
   providers: [],
