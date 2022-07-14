@@ -1,3 +1,8 @@
+:root {
+  --red-100: hsl(2, 100%, 35%);
+  --yellow-100: hsl(39, 100%, 75%);
+}
+
 body {
   margin: 0;
   height: 100vh;

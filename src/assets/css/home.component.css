@@ -1,25 +1,24 @@
-.element {
-  --red-100: hsl(2, 100%, 35%);
-  --yellow-100: hsl(39, 100%, 75%);
-}
-
 .homeHeader {
   display: grid;
   padding: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.hTop,
-.hBot {
+.content {
+  min-height: 93vh;
+}
+
+.logoTop,
+.logoBot {
   font-size: 3rem;
   margin: 0;
-  color: hsl(39, 100%, 75%);
+  color: var(--yellow-100);
   text-shadow: 4px 4px 8px black, 2px 2px 8px black;
   z-index: 1;
 }
 
-.hMid {
-  color: hsl(39, 100%, 75%);
+.logoMid {
+  color: var(--yellow-100);
   font-size: 2rem;
   margin-bottom: 0;
   margin-top: 0.7rem;
@@ -32,7 +31,7 @@ h2 {
   text-align: center;
 }
 
-.hNum {
+.logoNum {
   font-size: 16rem;
   position: absolute;
   text-align: center;
@@ -40,7 +39,7 @@ h2 {
   left: -10px;
   top: -35px;
   margin-top: 0;
-  color: hsl(2, 88%, 35%);
+  color: var(--red-100);
   text-shadow: 4px 4px 8px black, 2px 2px 8px black;
   letter-spacing: -20px;
 }
@@ -48,7 +47,8 @@ h2 {
 .cards {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
 }
 
 .civCard,
@@ -61,50 +61,33 @@ h2 {
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
+  filter: grayscale(100%);
+  color: white;
+}
+
+.civCard:hover,
+.unitsCard:hover,
+.structCard:hover,
+.techCard:hover {
+  height: 596px;
+  filter: grayscale(0%);
+  border: 4px solid var(--red-100);
 }
 
 .civCard {
   background-image: url(../img/civ.jpg);
-  filter: grayscale(100%);
-  color: white;
-}
-
-.civCard:hover {
-  filter: grayscale(0%);
-  border: 4px solid hsl(2, 100%, 35%);
 }
 
 .unitsCard {
   background-image: url(../img/units.jpg);
-  filter: grayscale(100%);
-  color: white;
-}
-
-.unitsCard:hover {
-  filter: grayscale(0%);
-  border: 4px solid hsl(2, 100%, 35%);
 }
 
 .structCard {
   background-image: url(../img/sturcture.jpg);
-  filter: grayscale(100%);
-  color: white;
-}
-
-.structCard:hover {
-  filter: grayscale(0%);
-  border: 4px solid hsl(2, 100%, 35%);
 }
 
 .techCard {
   background-image: url(../img/tech.jpg);
-  filter: grayscale(100%);
-  color: white;
-}
-
-.techCard:hover {
-  filter: grayscale(0%);
-  border: 4px solid hsl(2, 100%, 35%);
 }
 
 .cardName {
