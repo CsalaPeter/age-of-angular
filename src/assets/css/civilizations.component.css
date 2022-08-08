@@ -1,1 +1,51 @@
+.civCardContainer {
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: auto;
+  padding-inline: 200px;
+  padding-bottom: 2rem;
+}
 
+.civCard {
+  width: 150px;
+  height: 140px;
+  display: inline;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.civCard:hover {
+  cursor: pointer;
+}
+
+.civCardImg {
+  min-height: 130px;
+  max-width: 150px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid hsl(39, 87%, 41%);
+  overflow: hidden;
+  background-color: hsl(39, 100%, 75%);
+  box-shadow: 18px 18px 30px -5px black;
+}
+
+.civCardName {
+  height: 30px;
+  font-size: 1.6rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  border-inline: 2px solid hsl(39, 87%, 41%);
+  border-top: 2px solid hsl(39, 87%, 41%);
+  background-color: hsl(352, 88%, 29%);
+  color: hsl(45, 93%, 65%);
+}
+
+.civImage {
+  max-height: 120px;
+  max-width: 120px;
+  margin-left: 15px;
+}

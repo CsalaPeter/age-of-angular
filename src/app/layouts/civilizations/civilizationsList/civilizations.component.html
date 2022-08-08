@@ -1,16 +1,16 @@
 <h1 class="componentHeader">Civilizations</h1>
-<div class="cardContainer">
+<div class="civCardContainer">
   <div
-    class="card"
+    class="civCard"
     *ngFor="let civ of civilizations"
     [routerLink]="['/civilization', civ.id]"
     routerLinkActive="active"
   >
-    <div class="cardName">
+    <div class="civCardName">
       {{ civ.name }}
     </div>
-    <div class="cardImg">
-      <img class="image" src="../../../../assets/img/placeholder.png" />
+    <div class="civCardImg">
+      <img class="civImage" src="{{ civ.img }}" />
     </div>
   </div>
 </div>

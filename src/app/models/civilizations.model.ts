@@ -1,6 +1,7 @@
 export interface Civilization {
   id: number;
   name: string;
+  img: string;
   description: string;
   continent: string;
   army_focus: string[];
