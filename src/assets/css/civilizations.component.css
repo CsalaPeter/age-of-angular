@@ -49,3 +49,61 @@
   max-width: 120px;
   margin-left: 15px;
 }
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+  .civCardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding-inline: 20px;
+  }
+
+  .civCard {
+    width: 120px;
+    height: 100px;
+  }
+
+  .civCardImg {
+    max-width: 120px;
+    min-height: 100px;
+  }
+
+  .civCardName {
+    height: 25px;
+    font-size: 1.2rem;
+  }
+
+  .civImage {
+    max-height: 90px;
+    max-width: 90px;
+    margin-left: 15px;
+  }
+}
+
+/*Laptop and Tablet*/
+@media only screen and (max-width: 1000px) {
+  .civCardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding-inline: 20px;
+  }
+
+  .civCard {
+    width: 140px;
+    height: 120px;
+  }
+
+  .civCardImg {
+    max-width: 140px;
+    min-height: 120px;
+  }
+
+  .civCardName {
+    height: 25px;
+    font-size: 1.4rem;
+  }
+
+  .civImage {
+    max-height: 110px;
+    max-width: 110px;
+    margin-left: 15px;
+  }
+}

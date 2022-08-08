@@ -6,10 +6,9 @@
 body {
   margin: 0;
   height: 97vh;
-  width: 100vw;
+  width: 97vw;
   background: url("./assets/img/bg.jpg");
   z-index: -10;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-x: hidden;
 }
