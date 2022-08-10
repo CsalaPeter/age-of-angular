@@ -50,6 +50,70 @@
   margin-left: 15px;
 }
 
+.civIcon {
+  max-height: 120px;
+  max-width: 120px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-left: 125px;
+  text-align: justify;
+}
+
+.start {
+  width: 60vw;
+  margin-left: 20vw;
+}
+
+hr {
+  background-color: hsl(352, 88%, 29%);
+  height: 2px;
+  border: 0px;
+}
+
+.middle {
+  width: 80vw;
+  margin-left: 10vw;
+  font-size: 1.3rem;
+  padding-block: 20px;
+}
+
+.armyFocus {
+  margin-top: 0px;
+  font-size: 1.2rem;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.tech1,
+.tech2 {
+  list-style: none;
+}
+
+.tech1::before {
+  content: url("../img/utility/UniqueTechCastle.png");
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.tech2::before {
+  content: url("../img/utility/UniqueTechImperial.png");
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 /*Mobile*/
 @media only screen and (max-width: 600px) {
   .civCardContainer {
@@ -76,6 +140,11 @@
     max-height: 90px;
     max-width: 90px;
     margin-left: 15px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-left: 0px;
   }
 }
 
@@ -105,5 +174,9 @@
     max-height: 110px;
     max-width: 110px;
     margin-left: 15px;
+  }
+
+  .description {
+    margin-left: 0px;
   }
 }

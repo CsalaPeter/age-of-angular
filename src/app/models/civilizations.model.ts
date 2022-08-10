@@ -3,7 +3,6 @@ export interface Civilization {
   name: string;
   img: string;
   description: string;
-  continent: string;
   army_focus: string[];
   unique_units: string[];
   unique_technologies: string[];

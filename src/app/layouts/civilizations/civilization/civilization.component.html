@@ -2,55 +2,50 @@
   {{ civilization.name }}
 </h1>
 
-<div class="detailView">
-  <div class="pictures">
-    <img class="image" src="../../../../assets/img/placeholder.png" />
-  </div>
+<div class="start">
+  <hr />
+  <img class="civIcon" src="{{ civilization.img }}" />
+  <p class="description">{{ civilization.description }}</p>
+  <hr />
+</div>
 
-  <div class="stringData">
-    <ul>
-      <li>
-        Description:
-        {{ civilization.description }}
-      </li>
-      <li>
-        Continent:
-        {{ civilization.continent }}
-      </li>
-      <li>Army focus:</li>
-      <ul>
-        <li *ngFor="let army_focus of civilization.army_focus">
-          {{ army_focus }}
-        </li>
-      </ul>
-      <li>Unique units:</li>
-      <ul>
-        <li *ngFor="let units of civilization.unique_units">
-          {{ units }}
-        </li>
-      </ul>
-      <li>Unique technologies:</li>
-      <ul>
-        <li *ngFor="let tech of civilization.unique_technologies">
-          {{ tech }}
-        </li>
-      </ul>
-      <li>Civilization bonuses:</li>
-      <ul>
-        <li
-          *ngFor="let civilization_bonuses of civilization.civilization_bonuses"
-        >
-          {{ civilization_bonuses }}
-        </li>
-      </ul>
-      <li>
-        Team bonus:
-        {{ civilization.team_bonus }}
-      </li>
-      <li>
-        Wonder:
-        {{ civilization.wonder }}
-      </li>
-    </ul>
-  </div>
+<div class="middle">
+  <h2>Civilization uniqueness and bonuses</h2>
+  <p class="armyFocus" *ngIf="civilization.army_focus.length == 1">
+    <strong>Civilization focuses on {{ civilization.army_focus }}</strong>
+  </p>
+  <p class="armyFocus" *ngIf="civilization.army_focus.length == 2">
+    <strong
+      >Civilization focuses on {{ civilization.army_focus[0] }} and
+      {{ civilization.army_focus[1] }}</strong
+    >
+  </p>
+  <strong><p>Unique technologies</p></strong>
+  <ul class="uniqueTech">
+    <li class="tech1">{{ civilization.unique_technologies[0] }}</li>
+    <li class="tech2">{{ civilization.unique_technologies[1] }}</li>
+  </ul>
+
+  <strong><p>Unique unit(s)</p></strong>
+  <ul>
+    <li *ngFor="let units of civilization.unique_units">{{ units }}</li>
+  </ul>
+
+  <strong><p>Civilization bonuses</p></strong>
+  <ul>
+    <li *ngFor="let civBonuses of civilization.civilization_bonuses">
+      {{ civBonuses }}
+    </li>
+  </ul>
+
+  <strong><p>Team bonus</p></strong>
+  <ul>
+    <li>
+      {{ civilization.team_bonus }}
+    </li>
+  </ul>
+
+  <p>
+    The Wonder of the {{ civilization.name }}, the {{ civilization.wonder }}
+  </p>
 </div>
